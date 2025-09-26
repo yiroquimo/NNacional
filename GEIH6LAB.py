@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import os
 import io
 
+st.set_page_config(page_title="GEIH CTI", layout="wide")
 # Rutas de red para cargar los 6 archivos CSV
 network_paths = [
     r"\\ruta_red\carpeta\Matriz para GEIH_1.csv",
