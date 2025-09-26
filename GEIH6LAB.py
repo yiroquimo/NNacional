@@ -15,7 +15,7 @@ network_paths = [
 ]
 
 # Verifica si la imagen existe antes de mostrarla y permite tamaño ajustable
-img_path = 'img\encabezado_g.png'
+img_path = './img/encabezado_g.png'
 if os.path.exists(img_path):
     st.image(img_path, use_container_width=False, width=420)
 else:
