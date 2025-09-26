@@ -15,7 +15,7 @@ network_paths = [
 ]
 
 # Verifica si la imagen existe antes de mostrarla y permite tamaño ajustable
-img_path = 'img/EncabezadoG.png'
+img_path = 'img\encabezado_g.png'
 if os.path.exists(img_path):
     st.image(img_path, use_container_width=False, width=420)
 else:
@@ -55,7 +55,7 @@ def load_csv_skip_first_row(file_or_path, is_uploaded=False):
 # st.markdown(
 #     "<h2 style='font-size:20px; color:darkblue;'>Cargar archivos desde carpetas compartidas de Red</h2>",
 #     unsafe_allow_html=True
-)
+#)
 # dfs_red = []
 # for path in network_paths:
 #     df = load_csv_skip_first_row(path, is_uploaded=False)
