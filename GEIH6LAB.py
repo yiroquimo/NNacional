@@ -52,9 +52,9 @@ def load_csv_skip_first_row(file_or_path, is_uploaded=False):
         return pd.DataFrame()
 
 # Cargar archivos de red
-st.markdown(
-    "<h2 style='font-size:20px; color:darkblue;'>Cargar archivos desde carpetas compartidas de Red</h2>",
-    unsafe_allow_html=True
+# st.markdown(
+#     "<h2 style='font-size:20px; color:darkblue;'>Cargar archivos desde carpetas compartidas de Red</h2>",
+#     unsafe_allow_html=True
 )
 # dfs_red = []
 # for path in network_paths:
