@@ -56,17 +56,17 @@ st.markdown(
     "<h2 style='font-size:20px; color:darkblue;'>Cargar archivos desde carpetas compartidas de Red</h2>",
     unsafe_allow_html=True
 )
-dfs_red = []
-for path in network_paths:
-    df = load_csv_skip_first_row(path, is_uploaded=False)
-    if not df.empty:
-        st.write(f"Archivo: {path.split('\\')[-1]}")
-        st.write(f"Filas: {df.shape[0]}, Columnas: {df.shape[1]}")
-        st.dataframe(df.head(3))
-        dfs_red.append(df)
+# dfs_red = []
+# for path in network_paths:
+#     df = load_csv_skip_first_row(path, is_uploaded=False)
+#     if not df.empty:
+#         st.write(f"Archivo: {path.split('\\')[-1]}")
+#         st.write(f"Filas: {df.shape[0]}, Columnas: {df.shape[1]}")
+#         st.dataframe(df.head(3))
+#         dfs_red.append(df)
 
-if len(dfs_red) == 0:
-    st.warning("No se cargaron archivos desde las carpetas de red.")
+# if len(dfs_red) == 0:
+#     st.warning("No se cargaron archivos desde las carpetas de red.")
 
 # Permitir al usuario subir o seleccionar dos archivos CSV adicionales
 st.markdown(
